@@ -1,0 +1,19 @@
+version: '2.0'
+services:
+  app:
+    build: ./app
+    restart: always
+    tty: true
+    #privileged: true
+    environment:
+      - TOR_NUM=8
+      - TOR_ROTATE_TIME=60
+      - IN_PROXY_USER=admin
+      - IN_PROXY_PASS=admin
+      - IN_PROXY_INTERVAL=61
+    ports:
+      - "8081:8080"
+    working_dir: /data
+    volumes:
+      - ./data:/data
+        #network_mode: host
