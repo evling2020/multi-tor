@@ -46,7 +46,7 @@ docker-compose up -d
 ## 测试效果
 
 
-![Screen Shot 2022-03-23 at 9.44.51 AM.png](./images/Screen\ Shot\ 2022-03-23\ at\ 9.44.51\ AM.png)
+![Screen Shot 2022-03-23 at 9.44.51 AM.png](./images/Screen%20Shot%202022-03-23%20at%209.44.51%20AM.png)
 
 
 ## 法律免责声明
