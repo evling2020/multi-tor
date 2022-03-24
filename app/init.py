@@ -16,7 +16,7 @@ import yaml
 
 
 port_num = int(os.getenv('TOR_NUM')) if os.getenv('TOR_NUM') else 10
-port_num = port_num if port_num < 65535 else 65535
+port_num = port_num if port_num < 65535 else 65534
 tor_rotate_time = int(os.getenv('TOR_ROTATE_TIME')) if os.getenv('TOR_ROTATE_TIME') else 300
 in_proxy_interval = int(os.getenv('IN_PROXY_INTERVAL')) if os.getenv('IN_PROXY_INTERVAL') else 300
 in_proxy_port = 8080
