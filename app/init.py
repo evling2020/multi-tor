@@ -109,7 +109,7 @@ MaxCircuitDirtiness {tor_rotate_time}
     command_lines.append(f'{tor_bin} -f {tmp_tor_conf} &')
 
 
-build_conf(port_list, in_conf=in_conf, in_proxy_user, in_proxy_pass)
+build_conf(port_list, in_conf=in_conf, username=in_proxy_user, passwd=in_proxy_pass)
 command_lines.append('sleep 30')
 command_lines.append(f'{in_program_bin} -f {in_conf}')
 
